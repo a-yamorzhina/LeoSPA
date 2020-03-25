@@ -31,8 +31,161 @@
   font-weight: 500;
 }
 
+@font-face {
+  font-family: 'playfair-display', serif;
+  src: url("../fonts/playfair-display/playfair-display-regular.ttf");
+  font-weight: 400;
+}
 
+body{
+  width: @width;
+  margin: 0 auto;
+  font-family: 'roboto', sans-serif;
+}
 
+//-----------------HEADER-----------------
 
+.header {
+  width: 100%;
+  min-height: 1000px;
+  background-image: url("../img/header-backgr.png");
+  background-size: cover;
+  padding-top: 20px;
+}
 
+.container {
+  width: 360px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  padding: 20px 730px 0 390px;
+}
+
+.logo{
+  .a;
+  width: 109px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  fill: @accent-color;
+  color: #211833;
+  &:hover{
+    fill: @hover-accent-color;
+  }
+}
+
+.logo-icon {
+  width: 49px;
+  height: 41px;
+  margin: 0 auto;
+}
+
+.logo-name {
+  font-family: 'playfair-display', serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+
+.nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-menu {
+  .a;
+  color: #263a41;
+  .roboto-medium(14px);
+  line-height: 45px;
+  text-transform: uppercase;
+  padding-right: 30px;
+  &:hover{
+    color: @accent-color;
+  }
+  &:active {
+    color: @active-accent-color;
+  }
+}
+.header-content{
+  padding: 194px 730px 0 390px;
+}
+
+.header-content-above-title {
+  color: @accent-color;
+  .rufina-regular(15px);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.header-content-title {
+  width: 527px;
+  .rufina-bold(60px);
+  color: @black-color;
+}
+
+.header-content-p {
+  width: 499px;
+  color: #555555;
+  .rufina-regular(15px);
+  margin: 47px 0 55px 0;
+}
+
+.header-content-buttons {
+  display: flex;
+}
+
+.rectangle-button {
+  width: 170px;
+  height: 50px;
+  background-color: @accent-color;
+  color: white;
+  .roboto-medium(13px);
+  text-transform: uppercase;
+  border: none;
+  margin-right: 55px;
+  background-image: url("../img/right-arrow.svg");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 135px 19px;
+  &:hover {
+    background-color: @hover-accent-color;
+  }
+  &:active {
+    background-color: @active-accent-color;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.header-content-watch-btn {
+  .a;
+  display: flex;
+  align-items: center;
+  fill: @accent-color;
+  &:hover {
+    fill: @hover-accent-color;
+  }
+  &:active {
+    fill: @active-accent-color;
+  }
+}
+
+.header-content-watch-btn-icon {
+  width: 44px;
+  height: 44px;
+  background-color: #fcf5ee;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.header-content-watch-title {
+  .roboto-regular(15px);
+  color: #555555;
+}
 
