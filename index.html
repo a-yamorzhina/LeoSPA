@@ -464,51 +464,46 @@
     <section class="appointment">
         <form action="#" class="appointment-form">
             <div class="column-forms">
-                <div class="group">
-                    <label class="appointment-label" for="user-name">Name</label>
+                <div class="appointment-form-group">
                     <input class="appointment-input" type="text" id="user-name" pattern="^[a-zA-Z]+$" required>
-                    <span class="highlight"></span>
+                    <label class="appointment-label" for="user-name">Name</label>
                     <span class="bar"></span>
                 </div>
-                <div class="group">
-                    <label class="appointment-label" for="select-service">Select service</label><select
-                        class="appointment-input"
-                        id="select-service" required>
+                <div class="appointment-form-group">
+                    <input class="appointment-input" type="text" id="email" required>
+                    <label class="appointment-label" for="email">Email address</label>
+                    <span class="bar bar-date"></span>
+                </div>
+                <div class="appointment-form-group">
+                    <select class="appointment-input appointment-select" id="select-service" required>
                     <option value="massage" disabled>Massage</option>
                     <option value="thai massage" disabled>Thai massage</option>
                     <option value="stone therapy" disabled>Stone Therapy</option>
                 </select>
+                    <label class="appointment-label" for="select-service">Select service</label>
                 </div>
-                <div class="group">
-                    <label class="appointment-label" for="date">Date</label>
-                    <input class="appointment-input" type="date" id="date" value="2013-01-08">
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                </div>
-                <div class="group">
-                    <label class="appointment-label" for="email">Email address</label>
-                    <input class="appointment-input" type="email" id="email">
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                </div>
-                <div class="group">
+                <div class="appointment-form-group">
+                    <input class="appointment-input" type="text" id="number" maxlength="12" required>
                     <label class="appointment-label" for="number">Phone number</label>
-                    <input class="appointment-input" type="number" id="number" pattern="^[ 0-9]+$" required>
-                    <span class="highlight"></span>
                     <span class="bar"></span></div>
-                <div class="group">
+                <div class="appointment-form-group">
+                    <input class="appointment-input appointment-date" type="text" id="date" required>
+                    <label class="appointment-label" for="date">Date</label>
+                    <span class="bar bar-date"></span>
+                </div>
+                <div class="appointment-form-group">
+                    <input class="appointment-input appointment-time" type="text" id="time" required>
                     <label class="appointment-label" for="time">Time</label>
-                    <input class="appointment-input" type="time" id="time">
-                    <span class="highlight"></span>
                     <span class="bar"></span></div>
             </div>
-            <div class="group">
-                <label class="appointment-label appointment-textarea" for="notes">Your notes</label>
-                <textarea name="notes" id="notes" cols="30" rows="1"></textarea>
-                <span class="highlight"></span>
-                <span class="bar"></span></div>
+            <div class="appointment-form-group">
+                <textarea class="appointment-input appointment-textarea" name="notes" id="notes" cols="1" rows="1"></textarea>
+                <label class="appointment-label" for="notes">Your notes</label>
+                <span class="bar bar-2"></span></div>
+            <input type="button" class="primary-button appointment-btn" value="Make an Appointment">
         </form>
     </section>
+<!--    LATEST FROM BLOG-->
 </main>
 </body>
 </html>
