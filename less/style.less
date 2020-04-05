@@ -218,6 +218,8 @@ body {
   align-items: center;
 }
 
+
+
 .above-h2-title {
   .rufina-regular(20px);
   color: #888888;
@@ -229,11 +231,13 @@ body {
 .h2 {
   .h2-style;
 }
-
+.about-us-h2 {
+  margin-top: 35px;
+}
 .under-h2-p {
   .under-h2-text-style;
   width: 856px;
-  margin: 32px 0 71px 0;
+  margin: 29px 0 71px 0;
 }
 
 .primary-button {
@@ -318,17 +322,21 @@ body {
 
 //-----------------POPULAR PROCEDURES-----------------
 
-.popular-procedures {
+.popular-procedures,
+.latest-from-blog,
+.get-in-touch {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.popular-procedures-items {
+.popular-procedures-items,
+.latest-from-blog--items {
   display: flex;
 }
 
-.popular-procedures-item {
+.popular-procedures-item,
+.latest-from-blog-item {
   width: 360px;
   height: 583px;
   border: 1px solid #e3e6ea;
@@ -358,6 +366,7 @@ body {
   line-height: 27px;
   margin: 29px 0 45px 0;
   cursor: default;
+  text-align: center;
 }
 
 .popular-procedures-item-btn {
@@ -562,6 +571,7 @@ body {
   display: flex;
   justify-content: flex-end;
   padding-right: 393px;
+  margin-bottom: 140px;
 }
 
 .appointment-form {
@@ -698,3 +708,212 @@ body {
 }
 
 //-----------------LATEST FROM BLOG-----------------
+
+.latest-from-blog-items {
+  display: flex;
+}
+
+.latest-from-blog-item {
+  min-height: 660px;
+}
+.latest-from-blog-img {
+  width: 350px;
+  height: 314px;
+  background-color: #999999;
+}
+.latest-from-blog-minis {
+  .roboto-light(12px);
+  color: #888888;
+  line-height: 30px;
+  text-transform: uppercase;
+  width: 167px;
+  margin-top: 36px;
+}
+
+.latest-from-blog-minis-title {
+  &:after {
+    content: "|";
+    margin: 0 11px 0 11px;
+  }
+}
+
+.latest-from-blog-line {
+  display: block;
+  height: 12px;
+  width: 1px;
+  background-color: #888888;
+  margin: 0 11px 0 11px;
+}
+
+.latest-from-blog-title {
+  margin: 22px 0 25px 0;
+}
+
+.latest-from-blog-p {
+  margin: 0 0 41px 0;
+}
+
+//-----------------GET IN TOUCH-----------------
+
+.get-in-touch {
+  margin-top: 140px;
+}
+
+.get-in-touch-p {
+  margin-bottom: 0;
+}
+
+.get-in-touch-content {
+  margin-top: 95px;
+  display: flex;
+  justify-content: center;
+}
+
+.get-in-touch-contacts {
+  width: 250px;
+  margin-right: 80px;
+}
+
+.get-in-touch-contact {
+  display: block;
+  width: 175px;
+  .roboto-regular(14px);
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #888888;
+  position: relative;
+  margin-bottom: 61px;
+  &:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+
+.get-in-touch-address {
+  &:before {
+    content: url("../img/contact-1.png");
+    width: 50px;
+    position: absolute;
+    right: 210px;
+  }
+}
+
+.get-in-touch-email {
+  &:before {
+    content: url("../img/contact-2.png");
+    width: 50px;
+    position: absolute;
+    right: 210px;
+  }
+}
+
+.get-in-touch-phone {
+  &:before {
+    content: url("../img/contact-3.png");
+    width: 50px;
+    position: absolute;
+    right: 210px;
+  }
+}
+
+.get-in-touch-form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.get-in-touch-input {
+  width: 554px;
+  height: 50px;
+  border: 1px solid #e3e6ea;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  .roboto-regular(12px);
+  color: @black-color;
+  outline: none;
+  padding-left: 22px;
+}
+
+.get-in-touch-input::placeholder {
+  .roboto-light(12px);
+  color: #999999;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.get-in-touch-textarea {
+  height: 150px;
+  margin-bottom: 0;
+  resize: none;
+  padding-top: 32px;
+}
+
+.get-in-touch-btn {
+  text-transform: uppercase;
+}
+
+//-----------------FOOTER-----------------
+
+.footer {
+  height: 460px;
+  background-color: #fff9f8;
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav {
+  margin: 50px 0 0 0;
+}
+
+.footer-socials {
+  display: flex;
+  margin-top: 51px;
+}
+
+.footer-socials-a {
+  .a;
+  position: relative;
+  &:after {
+    content: "|";
+    color: #cdc7c6;
+    position: absolute;
+    left: 27px;
+    top: -1px;
+    cursor: default;
+  }
+}
+
+.footer-icon {
+  fill: #3a414e;
+  margin-right: 30px;
+  &:hover {
+    fill: @accent-color;
+  }
+  &:active {
+    fill: @active-accent-color;
+  }
+}
+
+.copyright {
+  .roboto-regular(13px);
+  text-transform: uppercase;
+  color: #888888;
+  margin-top: 49px;
+}
+
+.copyright-link {
+  .a;
+  color: @accent-color;
+}
+
+.copyright-link:visited {
+  color: @accent-color;
+}
+
+.copyright-link:visited{
+  &:active {
+    color: @active-accent-color;
+  }
+}
