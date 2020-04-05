@@ -38,11 +38,35 @@
 .h2-style {
   color: @black-color;
   .rufina-bold(42px);
+  margin: 0;
 }
 
-.under-h2-text-style {
+.h3-style {
+  color: #263a41;
+  .rufina-bold(22px);
+}
+
+.under-h2-text-style{
   color: @regular-font-color;
-  .roboto-light(15px)
+  .roboto-light(15px);
+  text-align: center;
+  line-height: 28px;
+  cursor: default;
+}
+
+//LINKS
+
+.a {
+  text-decoration: none;
+  &:hover{
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:visited {
+    color: currentColor;
+  }
 }
 
 
